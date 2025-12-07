@@ -30,7 +30,7 @@ app.use('/api', jwtCheck);
 
 // Health check endpoint (no auth required)
 app.get('/health', (req: Request, res: Response) => {
-    res.json({ status: 'ok', timestamp: new Date().toISOString(), version: 'v1.0.42' });
+    res.json({ status: 'ok', timestamp: new Date().toISOString(), version: 'v2.0.1' });
 });
 
 app.get('/api/test-error', (req: Request, res: Response) => {
